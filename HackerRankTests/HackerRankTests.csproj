@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\PlusMinus.cs" />
     <Compile Include="Algorithms\StairCase.cs" />
+    <Compile Include="Algorithms\MinMaxSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
