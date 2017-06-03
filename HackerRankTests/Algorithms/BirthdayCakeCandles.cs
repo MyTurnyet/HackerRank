@@ -29,8 +29,15 @@ namespace HackerRankTests.Algorithms
             highest.Should().Be(2);
 
         }
-        
+
+        private static int highestCandle = 0;
         private static int CountHighest(int[] inputArr)=>inputArr.Count(candle => candle == GetHighest(inputArr));
-        private static int GetHighest(int[] inputArr)=>inputArr.Max();
+        private static int GetHighest(int[] inputArr)
+        {
+            if (highestCandle > 0) return highestCandle;
+            highestCandle = inputArr.Max();
+            return highestCandle;
+
+        }
     }
 }
