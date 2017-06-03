@@ -61,6 +61,7 @@
     <Compile Include="Algorithms\MinMaxSum.cs" />
     <Compile Include="Algorithms\BirthdayCakeCandles.cs" />
     <Compile Include="Algorithms\TimeConversion.cs" />
+    <Compile Include="Algorithms\DiagonalDifference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
