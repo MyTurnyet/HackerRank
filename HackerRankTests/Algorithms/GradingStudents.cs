@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -17,6 +18,27 @@ namespace HackerRankTests.Algorithms
 
         }
 
+        [TestMethod, TestCategory("Unit")]
+        public void ShouldProcessIntArray()
+        {
+            //arrange
+            int[] inputNumbers = new[] {73, 67, 38, 33};
+            //act
+            int[] outputArray = Solve(inputNumbers);
+            //assert
+            outputArray.Should().BeEquivalentTo(new int[] {75, 67, 40, 33});
+        }
+
+        private static int[] Solve(int[] inputNumbers)
+        {
+            List<int> outputArray = new List<int>();
+            foreach (int inputNumber in inputNumbers)
+            {
+                outputArray.Add(RoundUp(inputNumber));
+            }
+            return outputArray.ToArray();
+        }
+
         [TestCategory("Unit")]
         [DataTestMethod]
         [DataRow(73, 75)]
@@ -31,20 +53,17 @@ namespace HackerRankTests.Algorithms
             actualReturnVal.Should().Be(expectedNumber);
 
         }
-        private int RoundUp(int inputNumber)
+
+        private static int RoundUp(int inputNumber)
         {
-            int padding = Padding(inputNumber);
             int returnVal = inputNumber;
-            if (padding < 3)
+            if (Padding(inputNumber) < 3)
             {
-                returnVal += padding;
+                returnVal += Padding(inputNumber);
             }
             return returnVal < 40 ? inputNumber : returnVal;
         }
 
-        private int Padding(int inputNumber)
-        {
-            return 5 - (inputNumber % 5);
-        }
+        private static int Padding(int inputNumber) => 5 - (inputNumber % 5);
     }
 }
