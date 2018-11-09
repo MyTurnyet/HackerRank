@@ -66,6 +66,7 @@
     <Compile Include="DataStructures\TwoDArrayTests.cs" />
     <Compile Include="InterviewPrep\CountingValleys.cs" />
       <Compile Include="InterviewPrep\JumpingClouds.cs"/>
+      <Compile Include="InterviewPrep\RepeatedString.cs"/>
     <Compile Include="InterviewPrep\SockMerchant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
