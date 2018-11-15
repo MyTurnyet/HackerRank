@@ -8,7 +8,7 @@ namespace HackerRankTests.DataStructures
     [TestClass]
     public class ArrayLeftRotation
     {
-/*        [TestMethod, TestCategory("Unit")]
+        [TestMethod, TestCategory("Unit")]
         public void ShouldRotateLeftOneSpace()
         {
             //assign
@@ -18,7 +18,7 @@ namespace HackerRankTests.DataStructures
             int[] rotatedArray = RotateArray(testArray, 4);
             //assert
             rotatedArray.Should().ContainInOrder(new[] {5, 1, 2, 3, 4});
-        }*/
+        }
 
         [TestMethod, TestCategory("Unit")]
         public void ShouldRotateLeftOneSpace_EndingWith2()
@@ -34,22 +34,24 @@ namespace HackerRankTests.DataStructures
             rotatedArray.Should().ContainInOrder(new[] {3, 4, 5, 1, 2});
         }
 
-        private int[] RotateArray(int[] arrayToRotate, int numberOfShifts)
+        private int[] RotateArray(int[] a, int d)
         {
             List<int> outputList = new List<int>();
-            int arrayLength = arrayToRotate.Length;
+            int arrayLength = a.Length;
             for (int index = 0; index < arrayLength; index++)
             {
-                var currentIndex = CurrentIndex(numberOfShifts, index, arrayLength);
-                outputList.Add(arrayToRotate[currentIndex]);
+                var currentIndex = CurrentIndex(d, index, arrayLength);
+                outputList.Add(a[currentIndex]);
             }
 
             return outputList.ToArray();
         }
 
-        private int CurrentIndex(int numberOfShifts, int index, int arrayLength)
+        private int CurrentIndex(int numberOfShifts, int arrayIndex, int arrayLength)
         {
-            return numberOfShifts + index > arrayLength - 1 ? 0 : numberOfShifts + index;
+            return numberOfShifts + arrayIndex > arrayLength - 1
+                ? (numberOfShifts - arrayLength) + arrayIndex
+                : numberOfShifts + arrayIndex;
         }
     }
 }
