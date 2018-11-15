@@ -73,6 +73,7 @@
       <Compile Include="InterviewPrep\RansomNote.cs"/>
       <Compile Include="InterviewPrep\RepeatedString.cs"/>
     <Compile Include="InterviewPrep\SockMerchant.cs" />
+      <Compile Include="InterviewPrep\TreeSums.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
