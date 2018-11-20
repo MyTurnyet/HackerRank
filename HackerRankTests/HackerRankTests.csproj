@@ -66,22 +66,23 @@
     <Compile Include="Algorithms\BirthdayCakeCandles.cs" />
     <Compile Include="Algorithms\TimeConversion.cs" />
     <Compile Include="Algorithms\GradingStudents.cs" />
-    <Compile Include="InterviewPrep\Arrays\ArrayLeftRotation.cs"/>
-    <Compile Include="InterviewPrep\Arrays\MinimumSwaps.cs"/>
-    <Compile Include="InterviewPrep\Arrays\TwoDArrayTests.cs"/>
+      <Compile Include="InterviewPrep\Arrays\ArrayLeftRotation.cs"/>
+      <Compile Include="InterviewPrep\Arrays\MinimumSwaps.cs"/>
+      <Compile Include="InterviewPrep\Arrays\TwoDArrayTests.cs"/>
     <Compile Include="InterviewPrep\CountingValleys.cs" />
-    <Compile Include="InterviewPrep\JumpingClouds.cs"/>
-    <Compile Include="InterviewPrep\RansomNote.cs"/>
-    <Compile Include="InterviewPrep\RepeatedString.cs"/>
+      <Compile Include="InterviewPrep\Dictionaries\RansomNote.cs"/>
+      <Compile Include="InterviewPrep\Dictionaries\TwoStrings.cs"/>
+      <Compile Include="InterviewPrep\JumpingClouds.cs"/>
+      <Compile Include="InterviewPrep\RepeatedString.cs"/>
     <Compile Include="InterviewPrep\SockMerchant.cs" />
-    <Compile Include="InterviewPrep\TreeSums.cs"/>
+      <Compile Include="InterviewPrep\TreeSums.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataStructures"/>
+      <Folder Include="DataStructures"/>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
