@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HackerRankTests.DataStructures
+namespace HackerRankTests.InterviewPrep.Arrays
 {
     [TestClass]
     public class ArrayLeftRotation

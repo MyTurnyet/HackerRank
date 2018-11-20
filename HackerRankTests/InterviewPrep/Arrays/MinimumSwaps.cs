@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HackerRankTests.InterviewPrep
+namespace HackerRankTests.InterviewPrep.Arrays
 {
     [TestClass]
     public class MinimumSwaps

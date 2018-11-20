@@ -3,7 +3,7 @@ using System.Linq;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace HackerRankTests.DataStructures
+namespace HackerRankTests.InterviewPrep.Arrays
 {
     [TestClass]
     public class TwoDArrayTests
