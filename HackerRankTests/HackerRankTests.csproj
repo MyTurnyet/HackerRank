@@ -70,6 +70,7 @@
     <Compile Include="DataStructures\TwoDArrayTests.cs" />
     <Compile Include="InterviewPrep\CountingValleys.cs" />
       <Compile Include="InterviewPrep\JumpingClouds.cs"/>
+      <Compile Include="InterviewPrep\MinimumSwaps.cs"/>
       <Compile Include="InterviewPrep\RansomNote.cs"/>
       <Compile Include="InterviewPrep\RepeatedString.cs"/>
     <Compile Include="InterviewPrep\SockMerchant.cs" />
